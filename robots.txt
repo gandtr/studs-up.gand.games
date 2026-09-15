@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://studsup.gand.games/sitemap.xml
+Sitemap: https://studs-up.gand.games/sitemap.xml

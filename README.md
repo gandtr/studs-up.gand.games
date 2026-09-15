@@ -2,10 +2,10 @@
 
 A static game page for **Studs Up!**, published by [Gand Games](https://gand.games/).
 
-- Primary address: `https://studsup.gand.games/`
+- Primary address: `https://studs-up.gand.games/`
 - Fallback: `https://gand.games/studsup/`
 - Hosting: GitHub Pages, `main` branch, repository root, matching the Aldith site.
-- DNS: CNAME `studsup` to `gandtr.github.io` (managed by the site owner).
+- DNS: CNAME `studs-up` to `gandtr.github.io` (managed by the site owner).
 - No framework, build step, external fonts or third-party scripts.
 
 Edit `index.html`, validate with `npx --yes html-validate@9 index.html`, then push
