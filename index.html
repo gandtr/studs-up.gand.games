@@ -23,7 +23,7 @@
 <link rel="preload" as="font" href="public/fonts/Silkscreen-Bold.ttf" type="font/ttf" crossorigin>
 <link rel="preload" as="image" href="public/lineup.webp" fetchpriority="high">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoGame","name":"Studs Up!","url":"https://studs-up.gand.games/","description":"A top-down five-a-side football brawler. Take The Mincers through a pub-league season, collect teeth and spend them on the club.","image":"https://studs-up.gand.games/public/og.jpg","genre":["Sports","Action","Arcade"],"gamePlatform":["Windows","macOS","Linux"],"operatingSystem":["Windows","macOS","Linux"],"applicationCategory":"Game","inLanguage":"en","publisher":{"@type":"Organization","name":"Gand Games","url":"https://gand.games/"},"author":{"@type":"Organization","name":"Gand","url":"https://gand.tr/"}}
+{"@context":"https://schema.org","@type":"VideoGame","name":"Studs Up!","url":"https://studs-up.gand.games/","description":"A top-down five-a-side football brawler. Take The Mincers through a pub-league season, collect teeth and spend them on the club.","image":"https://studs-up.gand.games/public/og.jpg","genre":["Sports","Action","Arcade"],"gamePlatform":["Windows","macOS","Linux"],"operatingSystem":["Windows","macOS","Linux"],"applicationCategory":"Game","inLanguage":"en","publisher":{"@type":"Organization","name":"Gand Games","url":"https://gand.games/"},"author":{"@type":"Organization","name":"Gand","url":"https://gand.tr/"},"trailer":{"@type":"VideoObject","name":"Studs Up! — Win Ugly","description":"Score goals. Break bodies. Collect teeth. Watch the Studs Up! trailer.","thumbnailUrl":"https://studs-up.gand.games/public/trailer/poster.jpg","contentUrl":"https://studs-up.gand.games/public/trailer/studs-up-trailer.mp4","uploadDate":"2026-09-16","duration":"PT55S","inLanguage":"en"}}
 </script>
 <style>
 @font-face{font-family:Chakra;src:url(public/fonts/ChakraPetch-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
@@ -36,11 +36,12 @@
 .ticker{background:var(--amber);color:var(--night);border-block:4px solid var(--night);outline:1px solid #be983a}.ticker .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:13px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.ticker span:nth-child(2){opacity:.5}
 .programme{background:var(--paper);color:var(--night);margin-top:42px;border-top:8px solid var(--blue);box-shadow:8px 8px 0 #0005}.section{padding:44px 44px 48px;border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:26px}.section-head .eyebrow{color:#37547b}.section-head .issue{font-size:11px;letter-spacing:.1em;color:#58666c;text-transform:uppercase}.section h2{font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1.12;letter-spacing:-.035em;margin-bottom:22px}.two-col{display:grid;grid-template-columns:1.1fr 1fr;gap:44px}.body-copy p+p{margin-top:16px}.body-copy{font-size:17px;color:#34454d}.body-copy strong{color:var(--night)}.facts{margin:0;font-size:12px;border-top:2px solid var(--night)}.facts div{display:grid;grid-template-columns:90px 1fr;gap:15px;border-bottom:1px solid var(--line);padding:12px 0}.facts dt{text-transform:uppercase;font-size:11px;letter-spacing:.08em;color:#53636a}.facts dd{margin:0;text-align:right;font-weight:700}.facts .status{color:#214dab}
 .gallery-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:22px}.gallery-head h2{margin-bottom:0}.gallery-head p{font-size:12px;color:#4d5d64;text-align:right;max-width:210px}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px}.gallery figure:first-child{grid-column:1/-1}.gallery a{display:block;background:var(--night);position:relative;overflow:hidden;outline-offset:4px}.gallery a::after{content:"↗";position:absolute;bottom:0;right:0;background:var(--amber);color:var(--night);width:32px;text-align:center;font-size:18px;line-height:32px;font-weight:700}.gallery a:hover img{opacity:.88}.gallery img{width:100%;aspect-ratio:16/9;image-rendering:pixelated;transition:opacity .15s}.gallery figcaption{display:flex;gap:12px;align-items:baseline;margin-top:9px;font-size:12px;line-height:1.4}.gallery figcaption span{font-weight:700;color:#2852a1;white-space:nowrap}.gallery figure:last-child{grid-column:1/-1}.gallery figure:last-child img{max-height:520px;object-fit:contain}.gallery-note{margin-top:24px;font-size:12px;color:#53636a}
+.trailer-player{margin-top:26px}.trailer-player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#081018}.trailer-player video:focus-visible{outline:3px solid var(--blue);outline-offset:5px}.trailer-player figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-top:14px;font-size:12px;color:#4d5d64}.trailer-player figcaption a{text-underline-offset:4px;font-weight:700}.trailer-player video::cue{font-family:Chakra,sans-serif}
 .rules{display:grid;grid-template-columns:1fr 1fr;gap:30px 40px;counter-reset:rule;list-style:none;margin:30px 0 0;padding:0}.rules li{counter-increment:rule;border-top:2px solid var(--night);padding-top:16px}.rules h3{font-size:20px;line-height:1.25;margin-bottom:10px}.rules h3::before{content:"0" counter(rule) " / ";color:var(--blue);font-size:13px}.rules p{font-size:16px;color:#34454d}.clubline{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-top:34px}.clubline div{text-align:center;padding:20px 8px;font-size:12px;text-transform:uppercase;letter-spacing:.04em}.clubline div+div{border-left:1px solid var(--line)}.clubline strong{display:block;font:700 28px/1.3 Silkscreen,monospace;color:var(--blue);margin-bottom:6px}
 .ticket{background:var(--blue);color:var(--paper);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:42px 44px}.ticket .eyebrow{color:#d5e2ff}.ticket h2{font-size:30px;line-height:1.15;margin:12px 0}.ticket p{font-size:15px;max-width:610px;color:#e0e7f5}.ticket .btn{white-space:nowrap}.footer{padding:32px 0 45px;font-size:12px;color:#aabbc4}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px}.footer a{text-underline-offset:4px}.footer .content-note{margin-top:16px;max-width:840px;color:#8fa5b2;font-size:11px}
 dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14px;width:min(1480px,96vw);max-width:96vw;max-height:94dvh;overflow:auto}dialog::backdrop{background:#02080eeb}.viewer-top{display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:12px;margin-bottom:12px}.viewer-top p{margin-right:auto}dialog button{cursor:pointer;border:1px solid #587182;background:transparent;color:var(--paper);min-width:44px;min-height:44px;padding:6px 12px}dialog button:hover{background:var(--amber);color:var(--night)}dialog img{width:100%;max-height:calc(90dvh - 120px);object-fit:contain;image-rendering:pixelated}.viewer-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:12px;font-size:12px}.viewer-bottom a{text-underline-offset:4px}
 @media(min-width:900px){.hero::after{content:"";position:absolute;right:3%;top:10%;height:85%;width:1px;background:#37505f;transform:rotate(26deg);z-index:-1}}
-@media(max-width:760px){.wrap{width:calc(100% - 32px)}.masthead{padding:18px 0;gap:12px}.masthead .label{display:none}.masthead nav{gap:16px}.hero{padding:32px 0}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(62px,14vw,90px)}.hero .intro{max-width:560px}.team-art{margin:-32px 0 0;max-width:540px;width:100%;justify-self:center}.team-art figcaption{margin-top:-16px}.release{margin-top:25px}.ticker .wrap{font-size:10px;gap:10px;padding-block:11px}.ticker span:nth-child(2){display:none}.programme{margin-top:26px}.section{padding:28px 22px 32px}.two-col{grid-template-columns:1fr;gap:26px}.section-head{gap:10px;margin-bottom:23px}.section-head .issue{font-size:9px}.section-head .eyebrow{font-size:10px}.gallery-head{align-items:start;flex-direction:column;gap:10px}.gallery-head p{text-align:left;max-width:none}.gallery{grid-template-columns:1fr;gap:22px}.gallery figure{grid-column:1!important}.gallery figcaption{font-size:11px}.gallery figure:last-child img{max-height:none}.rules{grid-template-columns:1fr;gap:24px}.clubline strong{font-size:20px}.clubline div{font-size:10px}.ticket{grid-template-columns:1fr;padding:30px 22px;gap:22px}.ticket .btn{justify-self:start}.footer-top{align-items:start;flex-direction:column;gap:12px}.viewer-bottom a{max-width:100px;text-align:center}}
+@media(max-width:760px){.wrap{width:calc(100% - 32px)}.masthead{padding:18px 0;gap:12px}.masthead .label{display:none}.masthead nav{gap:12px;font-size:10px;letter-spacing:.04em}.hero{padding:32px 0}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(62px,14vw,90px)}.hero .intro{max-width:560px}.team-art{margin:-32px 0 0;max-width:540px;width:100%;justify-self:center}.team-art figcaption{margin-top:-16px}.release{margin-top:25px}.ticker .wrap{font-size:10px;gap:10px;padding-block:11px}.ticker span:nth-child(2){display:none}.programme{margin-top:26px}.section{padding:28px 22px 32px}.two-col{grid-template-columns:1fr;gap:26px}.section-head{gap:10px;margin-bottom:23px}.section-head .issue{font-size:9px}.section-head .eyebrow{font-size:10px}.gallery-head{align-items:start;flex-direction:column;gap:10px}.gallery-head p{text-align:left;max-width:none}.gallery{grid-template-columns:1fr;gap:22px}.gallery figure{grid-column:1!important}.gallery figcaption{font-size:11px}.gallery figure:last-child img{max-height:none}.rules{grid-template-columns:1fr;gap:24px}.clubline strong{font-size:20px}.clubline div{font-size:10px}.ticket{grid-template-columns:1fr;padding:30px 22px;gap:22px}.ticket .btn{justify-self:start}.footer-top{align-items:start;flex-direction:column;gap:12px}.viewer-bottom a{max-width:100px;text-align:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 </style>
 </head>
@@ -49,7 +50,7 @@ dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14
 <header class="masthead wrap">
   <a href="https://gand.games/">← Gand Games</a>
   <span class="label">The pub league awaits</span>
-  <nav aria-label="Page sections"><a href="#screenshots">Screenshots</a><a href="#club">The club</a></nav>
+  <nav aria-label="Page sections"><a href="#trailer">Trailer</a><a href="#screenshots">Screenshots</a><a href="#club">The club</a></nav>
 </header>
 <main id="main">
   <section class="hero wrap" aria-labelledby="title">
@@ -59,7 +60,7 @@ dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14
         <h1 id="title">STUDS<span>UP!</span></h1>
         <p class="tagline">Goals win matches.<br>Teeth pay the bills.</p>
         <p class="intro">A football brawler from the wrong end of the league. Build a squad of misfits, survive the tackles, and drag your club to glory.</p>
-        <div class="actions"><a class="btn" href="#screenshots">See the action <span aria-hidden="true">↓</span></a><a class="btn ghost" href="#club">Meet the Mincers</a></div>
+        <div class="actions"><a class="btn" href="#trailer">Watch trailer <span aria-hidden="true">↓</span></a><a class="btn ghost" href="#club">Meet the Mincers</a></div>
       </div>
       <figure class="team-art"><img src="public/lineup.webp" width="1200" height="720" fetchpriority="high" alt="Dot Shiv, Bert Grinder and Ivy Dynamo in the Mincers' blue kits, rendered with the game's pixel-art player models."><figcaption>The Mincers · Your problem now.</figcaption></figure>
     </div>
@@ -67,8 +68,21 @@ dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14
   </section>
   <div class="ticker"><div class="wrap"><span>Score goals. Break bodies. Collect teeth.</span><span aria-hidden="true">✦</span><span>Welcome to Sunday football.</span></div></div>
   <div class="programme wrap">
+    <section class="section" id="trailer" aria-labelledby="trailer-title">
+      <div class="section-head"><p class="eyebrow">01 / The trailer</p><span class="issue">55 seconds · Sound on</span></div>
+      <h2 id="trailer-title">Win ugly.</h2>
+      <p class="body-copy">Goals, grudges, and one very bad decision.</p>
+      <figure class="trailer-player">
+        <video controls playsinline preload="none" width="1920" height="1080" poster="public/trailer/poster.jpg" aria-label="Studs Up! — Win Ugly trailer" aria-describedby="trailer-caption">
+          <source src="public/trailer/studs-up-trailer.mp4" type="video/mp4">
+          <track kind="captions" src="public/trailer/trailer.en.vtt" srclang="en" label="English">
+          <p><a href="public/trailer/studs-up-trailer.mp4">Watch the Studs Up! trailer (MP4).</a></p>
+        </video>
+        <figcaption id="trailer-caption"><span>Studs Up! · Official trailer · English captions available</span><a href="public/trailer/studs-up-trailer.mp4" download>Download trailer (MP4 · 12 MB) ↓</a></figcaption>
+      </figure>
+    </section>
     <section class="section" aria-labelledby="welcome">
-      <div class="section-head"><p class="eyebrow">01 / The matchday programme</p><span class="issue">The Mincers · Home edition</span></div>
+      <div class="section-head"><p class="eyebrow">02 / The matchday programme</p><span class="issue">The Mincers · Home edition</span></div>
       <h2 id="welcome">The beautiful game.<br>A very ugly afternoon.</h2>
       <div class="two-col">
         <div class="body-copy"><p>The pitch is questionable. The referee has his price. And your transfer budget is rattling around in somebody else’s mouth.</p><p>Charge a shot, bend it after the boot, or send a teammate through with a well-timed pass. Then brace for the return tackle. <strong>Studs Up! is top-down arcade football with a vicious streak.</strong></p><p>Take The Mincers through a ten-match season, or jump straight into Quick Match. There’s always another club to beat. Preferably on the scoreboard.</p></div>
@@ -76,7 +90,7 @@ dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14
       </div>
     </section>
     <section class="section" id="screenshots" aria-labelledby="action">
-      <div class="section-head"><p class="eyebrow">02 / From the touchline</p><span class="issue">In-game screenshots</span></div>
+      <div class="section-head"><p class="eyebrow">03 / From the touchline</p><span class="issue">In-game screenshots</span></div>
       <div class="gallery-head"><h2 id="action">Straight from the pitch.</h2><p>Select a screenshot for the full-size view.</p></div>
       <div class="gallery">
         <figure><a href="public/shots/01-pub-league.webp"><img src="public/shots/01-pub-league.webp" width="1920" height="1080" loading="lazy" alt="The Mincers in blue face Pintglass Athletic in red on the worn grass of the Pub Yard; teeth lie loose beside midfield."></a><figcaption><span>01 / PUB LEAGUE</span>Local rivals. Questionable tackles.</figcaption></figure>
@@ -89,7 +103,7 @@ dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14
       <p class="gallery-note">Captured from the development build, September 2026. Game and artwork in development.</p>
     </section>
     <section class="section" id="club" aria-labelledby="club-title">
-      <div class="section-head"><p class="eyebrow">03 / Club matters</p><span class="issue">Win on Saturday. Patch up on Sunday.</span></div>
+      <div class="section-head"><p class="eyebrow">04 / Club matters</p><span class="issue">Win on Saturday. Patch up on Sunday.</span></div>
       <h2 id="club-title">Build a club.<br>Break the league.</h2>
       <p class="body-copy">Football is only half the job. Between fixtures, the pub office is where you turn a collection of walking liabilities into a team worth backing.</p>
       <ol class="rules">
@@ -103,7 +117,7 @@ dialog{border:1px solid #587182;background:#081018;color:var(--paper);padding:14
       <div class="clubline"><div><strong>06</strong>Clubs with a grudge</div><div><strong>10</strong>Season fixtures</div><div><strong>30</strong>Club upgrades</div></div>
     </section>
     <section class="ticket" aria-labelledby="kickoff">
-      <div><p class="eyebrow">04 / Next fixture</p><h2 id="kickoff">Kick-off is coming.</h2><p>Studs Up! is in development for Windows, macOS and Linux. A release date hasn’t been set. Follow Gand Games for news from the touchline.</p></div>
+      <div><p class="eyebrow">05 / Next fixture</p><h2 id="kickoff">Kick-off is coming.</h2><p>Studs Up! is in development for Windows, macOS and Linux. A release date hasn’t been set. Follow Gand Games for news from the touchline.</p></div>
       <a class="btn" href="https://bsky.app/profile/gand-tr.bsky.social" target="_blank" rel="noopener">Follow the club <span aria-hidden="true">↗</span></a>
     </section>
   </div>
