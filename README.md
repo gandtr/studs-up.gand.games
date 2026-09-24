@@ -36,7 +36,7 @@ The native HTML video player is at `#trailer`, linked from the hero and catalogu
 card. It uses `preload="none"`, a poster, inline playback, standard controls and
 optional English WebVTT captions. No autoplay or JavaScript is required.
 
-Files in `public/trailer/` come from `../studs-up-trailer/output/`: the 55-second
+Files in `public/trailer/` come from `../studs-up-trailer/output/`: the 62-second
 1080p60 H.264/AAC MP4, an optimized JPEG of its title-card poster, and narration
 captions converted from SRT to WebVTT. Trailer staging and credits are documented
 in the source project's README. Keep these files in the fallback sync.
