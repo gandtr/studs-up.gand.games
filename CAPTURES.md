@@ -23,10 +23,15 @@ sessions or generated artifacts in that repository were changed by this task.
 
 ## Published screenshots
 
+Shots 01 and 02 were replaced on 2026-09-24 with side-on (faux-3D) captures from
+`../studs-up-trailer` (`SS_TRAILER_CLEAN=1` stills mode; see its README). Player
+placement in those scenes is staged by the trailer director; the action is real
+game code. Shots 03–06 are unchanged menu captures.
+
 | Website file | Engine scene | Capture point |
 |---|---|---|
-| `public/shots/01-pub-league.webp` | `pubyard` | 5 seconds |
-| `public/shots/02-concrete.webp` | `concrete` | 4 seconds |
+| `public/shots/01-knockout.webp` | trailer still `03-bottle` (Rich End), clean mode | 2.2 seconds |
+| `public/shots/02-shotgun.webp` | trailer still `06-shotgun` (Municipal Concrete), clean mode | 1.95 seconds |
 | `public/shots/03-recruitment.webp` | `menu-draft` | frame 2 |
 | `public/shots/04-pub-office.webp` | `menu-hub` | frame 2 |
 | `public/shots/05-upgrades.webp` | `menu-shop` | frame 2 |
