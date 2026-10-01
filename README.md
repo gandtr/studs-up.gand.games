@@ -12,7 +12,7 @@ Edit `index.html`, validate with `npx --yes html-validate@9 index.html`, then pu
 to `main`. Screenshots live under `public/shots/`; all six are lossless captures
 at 1920 × 1080. Asset provenance and capture instructions are in `CAPTURES.md`.
 
-The game checkout at `~/projects/games/StudsUp` is actively edited by another
+The game checkout at `~/projects/games/studs-up/StudsUp` is actively edited by another
 agent. Keep it read-only and use isolated copies for screenshots.
 
 ## Keeping the fallback current

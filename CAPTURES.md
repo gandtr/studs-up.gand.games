@@ -1,7 +1,7 @@
 # Studs Up! website assets
 
 Captured on 2026-09-16 from the current working tree of
-`/home/arda/projects/games/StudsUp`, including its updated player artwork.
+`/home/arda/projects/games/studs-up/StudsUp`, including its updated player artwork.
 The game repository was read-only throughout. No commits, files, saves, running
 sessions or generated artifacts in that repository were changed by this task.
 
