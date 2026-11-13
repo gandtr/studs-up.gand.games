@@ -9,7 +9,7 @@ A static game page for **Studs Up!**, published by [Gand Games](https://gand.gam
 - No framework, build step, external fonts or third-party scripts.
 
 Edit `index.html`, validate with `npx --yes html-validate@9 index.html`, then push
-to `main`. Screenshots live under `public/shots/`; all six are lossless captures
+to `main`. Screenshots live under `public/shots/`; all eight are lossless captures
 at 1920 × 1080. Asset provenance and capture instructions are in `CAPTURES.md`.
 
 The game checkout at `~/projects/games/studs-up/StudsUp` is actively edited by another
@@ -29,7 +29,7 @@ or store links change here, change the card too.
 ## Validation
 
 The initial publication passed HTML validation, local asset checks, and browser
-checks at 360, 390, 768 and 1440 pixels. The six-image viewer supports previous /
+checks at 360, 390, 768 and 1440 pixels. The screenshot viewer (six images then, eight since 1.1) supports previous /
 next, arrow keys, Escape, focus return and opening original images. Without
 JavaScript the screenshot links still work.
 

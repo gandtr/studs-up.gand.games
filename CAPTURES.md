@@ -32,10 +32,26 @@ game code. Shots 03–06 are unchanged menu captures.
 |---|---|---|
 | `public/shots/01-knockout.webp` | trailer still `03-bottle` (Rich End), clean mode | 2.2 seconds |
 | `public/shots/02-shotgun.webp` | trailer still `06-shotgun` (Municipal Concrete), clean mode | 1.95 seconds |
-| `public/shots/03-recruitment.webp` | `menu-draft` | frame 2 |
-| `public/shots/04-pub-office.webp` | `menu-hub` | frame 2 |
-| `public/shots/05-upgrades.webp` | `menu-shop` | frame 2 |
-| `public/shots/06-medical.webp` | `menu-medical` | frame 2 |
+| `public/shots/03-snow.webp` | `weather-snow` (1.1) | 5 seconds |
+| `public/shots/04-rain.webp` | `weather-rain` (1.1) | 5 seconds |
+| `public/shots/05-recruitment.webp` | `menu-draft` (was `03-recruitment.webp`) | frame 2 |
+| `public/shots/06-pub-office.webp` | `menu-hub-weather` (1.1) | frame 2 |
+| `public/shots/07-upgrades.webp` | `menu-shop` (1.1) | frame 2 |
+| `public/shots/08-squad.webp` | `menu-squad-care` (1.1) | frame 2 |
+
+### The 1.1 recapture (2026-11-14)
+
+For the 1.1 release the gallery grew to eight. The September pub office, shop and
+medical-room shots showed screens that 1.1 changed (the MEDICAL tab is gone; injured
+players are treated from SQUAD), so they were replaced, and snow and rain matches were
+added. The draft shot moved to 05 unchanged.
+
+The root Lua files, `data/`, `assets/` and `scripts/` were copied out of the game
+checkout before running anything (source HEAD `4caf3e3eb0aac5ef9b336410bfa214002f3fee66`, copied
+`2026-11-13T22:31:29Z`; version 1.1.0). Captures used that copy's `scripts/visual-review.sh`
+at 1920 × 1080 with `SDL_VIDEODRIVER=offscreen` and the scene's own temporary saves; the
+game checkout was not written to. The PNGs were converted with ImageMagick to lossless
+WebP (`webp:lossless=true`) without cropping or retouching.
 
 `public/lineup.webp` was freshly rendered using the game's existing store-art
 `lineup()` function, current character models, names and Mincers kit. Only the
