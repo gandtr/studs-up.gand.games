@@ -38,8 +38,8 @@ new encode, commit it and run `tools/push_media_r2.sh` (by hand) before deployin
 ## The gand.games card
 
 There is no fallback copy any more. `gand.games/studsup/` in the `gand.games`
-repository (`~/projects/gand/gand.games`) is a noindex redirect stub to this site,
-because GitHub Pages cannot send a 301; it needs no syncing.
+repository (`~/projects/games/gand.games`) is a noindex redirect stub to this site,
+made while gand.games was on GitHub Pages, which cannot send a 301; it needs no syncing.
 
 The catalogue card repeats some of this page's copy: description, spec row, Steam
 links, release status. It lives in `gand.games/index.html` with its screenshots in
