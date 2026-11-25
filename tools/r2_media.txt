@@ -1,0 +1,7 @@
+# Files over the 25 MiB Workers asset limit. They stay in git, are left out of
+# the Worker build (tools/build_site.sh) and are served from the R2 bucket
+# studs-up-media at https://media.studs-up.gand.games/<same path>.
+# Upload with tools/push_media_r2.sh after changing one.
+# "attachment": served with Content-Disposition: attachment, because the page's
+# download links are cross-origin now and browsers ignore their download attribute.
+public/trailer/studs-up-trailer.mp4 attachment

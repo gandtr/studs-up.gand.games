@@ -4,16 +4,36 @@ A static game page for **Studs Up!**, published by [Gand Games](https://gand.gam
 
 - Primary address: `https://studs-up.gand.games/`
 - Old address: `https://gand.games/studsup/` redirects here (a stub, not a copy).
-- Hosting: GitHub Pages, `main` branch, repository root, matching the Aldith site.
-- DNS: CNAME `studs-up` to `gandtr.github.io` (managed by the site owner).
+- Hosting: a Cloudflare Worker with static assets (`studs-up-gand-games`, Gand
+  account), deployed by hand (see Deploy). Until 2026-11-25 it was GitHub Pages
+  from `main`; GitHub could not renew its certificate behind the Cloudflare proxy.
+- Trailer: too big for Workers static assets (25 MiB per file), so it is served
+  from the R2 bucket `studs-up-media` at `https://media.studs-up.gand.games/`.
 - No framework, build step, external fonts or third-party scripts.
 
-Edit `index.html`, validate with `npx --yes html-validate@9 index.html`, then push
-to `main`. Screenshots live under `public/shots/`; all eight are lossless captures
+Edit `index.html`, validate with `npx --yes html-validate@9 index.html`, commit,
+then deploy (below). Screenshots live under `public/shots/`; all eight are lossless captures
 at 1920 × 1080. Asset provenance and capture instructions are in `CAPTURES.md`.
 
 The game checkout at `~/projects/games/studs-up/StudsUp` is actively edited by another
 agent. Keep it read-only and use isolated copies for screenshots.
+
+## Deploy
+
+```bash
+tools/deploy_cloudflare.sh
+```
+
+It runs `tools/build_site.sh`, which builds `_site/` from the **committed** tree
+(commit first) with only `index.html`, `public/`, `robots.txt` and `sitemap.xml`
+(this file, `CAPTURES.md`, `capture-manifest.json`, `tests/` and the dotfiles are
+not served), then `wrangler deploy` uploads it with your local wrangler login
+([`wrangler.jsonc`](wrangler.jsonc) holds the custom domain).
+
+Files in `tools/r2_media.txt` (the trailer MP4) stay in git but are left out of
+the build: they are served from R2 at `https://media.studs-up.gand.games/<repo
+path>`, the page links there, and `_redirects` sends the old path there. After a
+new encode, commit it and run `tools/push_media_r2.sh` (by hand) before deploying.
 
 ## The gand.games card
 
